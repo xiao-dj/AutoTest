@@ -2,7 +2,4 @@
 
 2222222222---branch1
 version1
-
-version2
-
-这是master分支
+这是合并后的内容
