@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="parameter">
+    <test name="param">
+        <classes>
+            <parameter name = "name" value="zhangsan"/>
+            <parameter name = "age" value="10"/>
+
+            <class name ="com.muke.testng.paramter.ParamterTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>
