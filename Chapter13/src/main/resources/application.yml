@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+logging:
+  path: logs
+  file: userManager.log
+
+spring:
+  application:
+    name: userManager
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://122.51.54.59/banana
+    username: root
+    password: Ying1997.1210
+
+mybatis:
+  type-aliases-package: com.muke.model
+  mapper-locations:
+  - mapper/*

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.muke.dao.UserDao">
+    <select id="selectUserInfoByEmail" resultType="com.muke.entity.UserInfo">
+
+    select id,name,phone,email from user
+        <where>
+            <if test="phone != null and phone !='' ">
+                phone=#{phone}
+            </if>
+
+            <if test="email != null and email != '' ">
+                or email=#{email}
+            </if>
+
+        </where>
+
+  </select>
+
+    <insert id="insertUserByEmail">
+        insert into user(email,password) values(#{email},#{password})
+    </insert>
+</mapper>
